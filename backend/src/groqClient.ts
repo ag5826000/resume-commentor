@@ -21,7 +21,7 @@ class GroqClient {
             const response = await axios.post(
                 `${this.baseUrl}/completions`,
                 {
-                    model: 'mixtral-8x7b-32768',
+                    model: 'llama3-70b-8192',
                     messages: [{ role: 'user', content: prompt }],
                     ...options
                 },

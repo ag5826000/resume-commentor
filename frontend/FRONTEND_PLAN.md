@@ -9,10 +9,10 @@
 ## Implementation Steps
 
 ### 1. Project Setup (Week 1)
--✅ Initialize React project with TypeScript
--✅ Configure Tailwind CSS
--✅ Set up project structure
--✅ Configure routing
+- Initialize React project with TypeScript
+- Configure Tailwind CSS
+- Set up project structure
+- Configure routing
 
 ### 2. File Upload Components (Week 1-2)
 - Create drag-and-drop resume uploader
