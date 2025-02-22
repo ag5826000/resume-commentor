@@ -1,0 +1,115 @@
+.fileUploadBtnContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  padding: 20px;
+  border: 2px dashed #ccc;
+  border-radius: 8px;
+  transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+.fileUploadBtnContainer.dragOver {
+  border-color: #ffc75d;
+  background-color: #f7ff0012;
+  box-shadow: 0 0 10px rgb(255 199 93 / 22%);
+}
+
+.instructionsText {
+  font-size: 20px;
+  font-weight: 300;
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+
+.mainBtn {
+  background: linear-gradient(45deg, #ffc75d, #ffc708);
+  box-shadow: 0 0 24px #ffb20861;
+  border: 2px solid #ffe825;
+  border-radius: 100px;
+  transition: background-color 0.3s ease;
+  padding: 10px 20px;
+  color: #09090b;
+  cursor: pointer;
+}
+
+.mainBtn:hover {
+  background-color: #ffc75d !important;
+  box-shadow: 0 0 34px #ffb20861 !important;
+  text-shadow: 0 0 4px #ffe825;
+  border-color: #ffe825 !important;
+}
+
+.successBtn {
+  background: linear-gradient(45deg, #17d062, #08ff79) !important;
+  border-color: #08ff79 !important;
+  box-shadow: 0 0 24px #08ff8161 !important;
+}
+
+.successBtn:hover {
+  background: linear-gradient(45deg, #08ff79, #17d062) !important;
+  box-shadow: 0 0 34px #08ff8161 !important;
+  text-shadow: 0 0 4px #08ff79;
+}
+
+.label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.jobDescriptionContainer {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.jobDescriptionInput {
+  width: 100%;
+  min-height: 150px;
+  padding: 20px;
+  border: 2px dashed #ccc;
+  border-radius: 8px;
+  background-color: transparent;
+  font-size: 16px;
+  resize: vertical;
+  transition: all 0.3s ease;
+}
+
+.jobDescriptionInput:focus {
+  outline: none;
+  border-color: #ffc75d;
+  box-shadow: 0 0 10px rgb(255 199 93 / 22%);
+}
+
+.jobDescriptionInput::placeholder {
+  color: #666;
+}
+
+.submitBtn {
+  margin-top: 20px;
+  width: 100%;
+  max-width: 200px;
+  align-self: center;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.disabled {
+  opacity: 0.6;
+  cursor: not-allowed !important;
+  box-shadow: none !important;
+}
+
+.disabled:hover {
+  box-shadow: none !important;
+  background: linear-gradient(45deg, #ffc75d, #ffc708) !important;
+}
