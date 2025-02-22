@@ -44,7 +44,7 @@ Compare this resume with the job description and analyze the match:
     const completion = await this.groq.chat.completions.create({
       messages: [{ role: "user", content: prompt }],
       model: "llama-3.3-70b-versatile", // Best for versatile analysis and comparison
-      temperature: 0.1,
+      temperature: 0.3,
     });
 
     const result = JSON.parse(completion.choices[0]?.message?.content || "{}");

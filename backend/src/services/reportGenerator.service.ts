@@ -78,7 +78,7 @@ export class ReportGeneratorService {
 
     Return a detailed analysis in the following STRICT JSON format without any other additional text:
     {
-      "overall score": number between 0-100,
+      "overall_score": number between 0-100,
       "summary": A concise 2-3 sentence overview of the resume's fitness for the role,
       "strengths": Array of 3-5 key strengths identified in the resume,
       "weaknesses": Array of 3-5 main areas needing improvement,
@@ -88,7 +88,7 @@ export class ReportGeneratorService {
     
     Example:
     {
-      "overall score": 95,
+      "overall_score": 95,
       "summary": "The resume is a strong fit for the role, showcasing exceptional skills and experience.",
       "strengths": ["Expertise in data analysis", "Strong communication skills"],
       "weaknesses": ["Lack of industry-specific knowledge", "Limited project management experience"],

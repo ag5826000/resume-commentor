@@ -36,8 +36,8 @@ Analyze this resume for ATS compatibility:
 
     const completion = await this.groq.chat.completions.create({
       messages: [{ role: "user", content: prompt }],
-      model: "mixtral-8x7b-32768", // Good for structured analysis with 32k context
-      temperature: 0.1, // Lower temperature for more consistent output
+      model: "llama-3.3-70b-specdec", // Good for structured analysis with 32k context
+      temperature: 0.3, // Lower temperature for more consistent output
     });
 
     const result = JSON.parse(completion.choices[0]?.message?.content || "{}");

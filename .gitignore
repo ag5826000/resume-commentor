@@ -9,6 +9,7 @@
 /build
 /frontend/dist
 /backend/dist
+/frontend/.next
 
 # Environment variables
 .env

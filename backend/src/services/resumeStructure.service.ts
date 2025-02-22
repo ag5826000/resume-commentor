@@ -36,8 +36,8 @@ Return the analysis in the following strict JSON format without any additional t
 
     const completion = await this.groq.chat.completions.create({
       messages: [{ role: "user", content: prompt }],
-      model: "mixtral-8x7b-32768", // Excellent for structure analysis with 32k context
-      temperature: 0.1,
+      model: "llama-3.3-70b-specdec", // Excellent for structure analysis with 32k context
+      temperature: 0.3,
     });
 
     const result = JSON.parse(completion.choices[0]?.message?.content || "{}");
