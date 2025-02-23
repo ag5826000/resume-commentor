@@ -99,7 +99,7 @@ export class ReportGeneratorService {
 
     const completion = await this.groq.chat.completions.create({
       messages: [{ role: "user", content: prompt }],
-      model: "llama-3.3-70b-versatile", // Best for detailed analysis and feedback
+      model: "llama-3.2-90b-vision-preview", // Best for detailed analysis and feedback
       temperature: 0.3,
     });
 
