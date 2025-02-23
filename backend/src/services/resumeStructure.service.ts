@@ -36,7 +36,7 @@ Return the analysis in the following strict JSON format without any additional t
 
     const completion = await this.groq.chat.completions.create({
       messages: [{ role: "user", content: prompt }],
-      model: "llama-3.3-70b-specdec", // Excellent for structure analysis with 32k context
+      model: "llama-3.2-90b-vision-preview", // Excellent for structure analysis with 32k context
       temperature: 0.3,
     });
 

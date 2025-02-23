@@ -36,7 +36,7 @@ Analyze this resume for ATS compatibility:
 
     const completion = await this.groq.chat.completions.create({
       messages: [{ role: "user", content: prompt }],
-      model: "llama-3.3-70b-specdec", // Good for structured analysis with 32k context
+      model: "llama-3.2-90b-vision-preview", // Good for structured analysis with 32k context
       temperature: 0.3, // Lower temperature for more consistent output
     });
 
